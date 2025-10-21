@@ -1,0 +1,38 @@
+# --- Mount Bronze Container ---
+dbutils.fs.mount(
+    source = 'wasbs://puma-bronze@pumaadlsdatapipeline.blob.core.windows.net',
+    mount_point = '/mnt/puma-bronze', 
+    extra_configs = {
+        'fs.azure.account.key.pumaadlsdatapipeline.blob.core.windows.net': dbutils.secrets.get(
+            scope = 'adbSecretScope',
+            key = 'storage-key'
+        )
+    }
+)
+# Check for the existence of the data inside the bronze container
+dbutils.fs.ls('/mnt/puma-bronze')
+
+# --- Création de la base ---
+spark.sql('CREATE DATABASE IF NOT EXISTS HumanResourceSD')
+
+# Définition des chemins des CSV dans le conteneur Bronze
+people_data_path = "/mnt/puma-bronze/people_data.csv"
+people_employment_history_path = "/mnt/puma-bronze/people_employment_history.csv"
+
+# Chargement du fichier people_data.csv dans une table
+spark.sql(f"""
+    CREATE TABLE IF NOT EXISTS HumanResourceSD.people_data
+    USING CSV
+    OPTIONS (header 'true', inferSchema 'true')
+    LOCATION '{people_data_path}'
+""")
+
+# Chargement du fichier people_employment_history.csv dans une table
+spark.sql(f"""
+    CREATE TABLE IF NOT EXISTS HumanResourceSD.people_employment_history
+    USING CSV
+    OPTIONS (header 'true', inferSchema 'true')
+    LOCATION '{people_employment_history_path}'
+""")
+
+spark.sql('DROP DATABASE snapshots CASCADE')
