@@ -161,7 +161,7 @@ Connect Power BI Desktop to Synapse Serverless or Databricks SQL endpoint to bui
 ---
 
 
-## 🧩 Prerequisites
+##  Prerequisites
 
 1. **Azure Subscription** (Contributor access)
 2. **Airflow Environment** (Local or Astronomer)
@@ -170,6 +170,7 @@ Connect Power BI Desktop to Synapse Serverless or Databricks SQL endpoint to bui
 5. **Databricks CLI**
 6. **dbt-core + dbt-databricks**
 7. **Power BI Desktop**
+
 
 
 
