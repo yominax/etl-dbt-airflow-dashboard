@@ -156,7 +156,7 @@ Connect Power BI Desktop to Synapse Serverless or Databricks SQL endpoint to bui
 
 <img width="699" height="351" alt="image" src="https://github.com/user-attachments/assets/e18228d8-ba5b-465c-8ede-b7ab292414d2" />
 
-![Uploading image.png…]()
+[![Uploading image.png…]()](https://github.com/user-attachments/assets/3916238d-be8e-4dde-8c79-cb7dec1554fb)
 
 ---
 
@@ -171,9 +171,10 @@ Connect Power BI Desktop to Synapse Serverless or Databricks SQL endpoint to bui
 6. **dbt-core + dbt-databricks**
 7. **Power BI Desktop**
 
----
 
-https://github.com/user-attachments/assets/3916238d-be8e-4dde-8c79-cb7dec1554fb
+
+
+
 
 
 
