@@ -43,7 +43,7 @@ def hr_pipeline():
         employment_history_path = "/usr/local/airflow/include/local/people_employment_history.csv"
 
         container_name = Variable.get("CONTAINER_NAME")
-        storage_account_name = f"{container_name.split('-')[0]}adlsdatapipeline"
+        storage_account_name = f"{container_name.split('-')[0]}stdata"
         access_key = Variable.get("ACCESS_KEY")
 
         people_data_adls_path = f"abfs://{container_name}@{storage_account_name}.dfs.core.windows.net/people_data.csv"

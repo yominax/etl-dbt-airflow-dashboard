@@ -3,7 +3,7 @@
         materialized = "table", 
         file_format = "delta", 
         schema = 'marts', 
-        location_root = "/mnt/puma-gold"
+        location_root = "/mnt/marlin-gold"
     )
 }}
 

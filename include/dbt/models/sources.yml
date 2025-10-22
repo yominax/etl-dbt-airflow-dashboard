@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: bronze
+  - name: humanresourcesd
     schema: HumanResourceSD
     tables:
       - name: people_data

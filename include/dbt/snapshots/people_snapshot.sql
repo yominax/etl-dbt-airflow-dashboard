@@ -3,7 +3,7 @@
 {{
     config(
         file_format = "delta",
-        location_root = "/mnt/puma-silver",
+        location_root = "/mnt/marlin-silver",
         target_schema = 'snapshots',
         invalidate_hard_deletes = True,
         unique_key = 'employee_id',
