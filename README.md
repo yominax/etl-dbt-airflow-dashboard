@@ -18,13 +18,15 @@ Architecture
 <img width="821" height="482" alt="image" src="https://github.com/user-attachments/assets/a609a3fd-8d63-4b45-b8e1-30a10fe442bb" />
 <img width="724" height="700" alt="image" src="https://github.com/user-attachments/assets/b208e51f-cb99-42f7-8d69-57734a20ce8d" />
 <img width="2219" height="1183" alt="image" src="https://github.com/user-attachments/assets/dc68b5b1-ad4f-4512-b42a-15c681fd6c37" />
- ![](images/dashboard.gif)
+ ![dashboard](./images/dashboard.gif)
+
 
 
 <img width="699" height="351" alt="image" src="https://github.com/user-attachments/assets/e18228d8-ba5b-465c-8ede-b7ab292414d2" />
 
 
 ![Uploading image.png…]()
+
 
 
 
