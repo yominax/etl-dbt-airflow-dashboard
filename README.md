@@ -19,7 +19,7 @@ The architecture leverages Azure components such as:
 
 ---
 
-## ⚙️ Project Flow
+##  Project Flow
 
 ### 1. Run Airflow DAGs
 Execute Airflow DAGs to:
@@ -170,6 +170,7 @@ Connect Power BI Desktop to Synapse Serverless or Databricks SQL endpoint to bui
 5. **Databricks CLI**
 6. **dbt-core + dbt-databricks**
 7. **Power BI Desktop**
+
 
 
 
